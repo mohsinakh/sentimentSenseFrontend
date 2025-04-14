@@ -1,0 +1,63 @@
+{
+    "sections": [
+      {
+        "key": "intro",
+        "title": "🚀 Introduction",
+        "content": "The Sentiment Analysis Platform analyzes user sentiment from YouTube comments, Reddit discussions, and real-time input using VADER NLP."
+      },
+      {
+        "key": "getting-started",
+        "title": "🛠️ Getting Started",
+        "content": "To start using the platform, follow these steps:\n\n1️⃣ Sign Up/Login\n   - Create an account or log in using your credentials.\n   - If logging in with Google OAuth, a random password will be assigned, which can be changed later.\n\n2️⃣ Choose a Service\n   - Select from YouTube Sentiment Analysis, Reddit Analysis, or Real-Time Sentiment Analysis.\n\n3️⃣ Analyze Data\n   - Enter the YouTube video URL, Reddit post URL, or custom text for real-time analysis.\n   - The platform fetches and analyzes comments using Natural Language Processing (NLP).\n\n4️⃣ View Results\n   - Get insights such as positive, neutral, and negative sentiment breakdowns."
+      },
+      {
+        "key": "features",
+        "title": "✨ Features",
+        "content": "✅ YouTube Comment Analysis\n✅ Reddit Discussion Analysis\n✅ Real-Time Sentiment Analysis"
+      },
+      {
+        "key": "authentication",
+        "title": "🔐 User Authentication",
+        "content": "Uses JWT authentication and Google OAuth login with a random password generator."
+      },
+      {
+        "key": "frontend",
+        "title": "🎨 Frontend Overview",
+        "content": "Built with React.js, Axios, and React Router for smooth navigation."
+      },
+      {
+        "key": "deployment",
+        "title": "🚀 Deployment",
+        "content": "Backend is hosted on Vercel, and the frontend is deployed on Netlify."
+      },
+      {
+        "key": "env",
+        "title": "📝 Environment Variables",
+        "content": "Set up API keys and secrets in the `.env` file."
+      },
+      {
+        "key": "tech-stack",
+        "title": "💻 Tech Stack",
+        "content": "FastAPI, React.js, MongoDB, and NLP libraries power the platform."
+      },
+      {
+        "key": "faq",
+        "title": "❓ FAQ",
+        "content": "Can I analyze private YouTube videos? No, only public videos are supported."
+      }
+    ],
+    "api_endpoints": {
+      "authentication": [
+        "POST /auth/register  // Register a new user",
+        "POST /auth/login  // Login and get JWT token",
+        "POST /auth/google-login  // Login with Google OAuth",
+        "POST /auth/forgot-password  // Update user password"
+      ],
+      "sentiment_analysis": [
+        "POST /sentiment/analyze  // Analyze custom text",
+        "POST /sentiment/youtube  // Fetch & analyze YouTube comments",
+        "POST /sentiment/reddit  // Fetch & analyze Reddit comments"
+      ]
+    }
+  }
+  

@@ -1,0 +1,324 @@
+/* General styling */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.profile-page {
+    max-width: 1200px;
+    margin: 50px auto;
+    padding: 20px;
+    font-family: 'Arial', sans-serif;
+    background-color: #f8f9fa;
+}
+
+/* Ensure that icons are using their original color by not applying any color overrides */
+.profile-page .fa {
+    color: inherit;  /* Inherit color from the text */
+}
+
+/* If you want specific colors for certain icons, you can set them here */
+.profile-page .fa-user {
+    color: #007bff; /* Example: blue color for username icon */
+}
+
+.profile-page .fa-envelope {
+    color: #28a745; /* Example: green color for email icon */
+}
+
+.profile-page .fa-smile {
+    color: #f39c12; /* Example: yellow for sentiment icon */
+}
+
+.profile-page .fa-youtube {
+    color: #ff0000; /* YouTube red */
+}
+
+.profile-page .fa-reddit {
+    color: #ff4500; /* Reddit orange */
+}
+
+.profile_link {
+    text-decoration: none;
+    font-size: 1.1rem;
+    color: #f5a623;
+    background: transparent;
+    border: none;
+    cursor: pointer;
+    font-weight: bold;
+    transition: color 0.3s;
+  }
+  
+
+/* Basic styles for the button */
+.profile-btn {
+    background-color: #f5a623 ; /* Blue background */
+    color: white; /* White text */
+    border: none;
+    padding: 5px 5px; /* Padding for a larger clickable area */
+    font-size: 16px;
+    border-radius: 5px; /* Rounded corners */
+    cursor: pointer;
+    transition: all 0.3s ease; /* Smooth transition for hover effect */
+    margin-top: 10px;
+    display: inline-block;
+  }
+  
+  /* Hover effect for the button */
+  .profile-btn:hover {
+    background-color: #e68a00; /* Darker blue on hover */
+    transform: scale(1.05); /* Slightly larger on hover */
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2); /* Adding a shadow on hover */
+  }
+  
+  /* Focused state (when clicked) */
+  .profile-btn:focus {
+    outline: none;
+    box-shadow: 0 0 0 2px rgba(0, 123, 255, 0.5); /* Add focus outline */
+  }
+  
+  /* Disabled button styles (optional) */
+  .profile-btn:disabled {
+    background-color: #c6c6c6; /* Gray background */
+    cursor: not-allowed; /* Disable pointer cursor */
+    box-shadow: none; /* Remove hover effect */
+  }
+  
+
+  .profile_link:hover {
+    color: #e68a00;
+  }
+  
+
+.profile-header {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.profile-header h2 {
+    font-size: 2.5rem;
+    color: #343a40;
+}
+
+.profile-details {
+    background-color: #ffffff;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.profile-details p {
+    font-size: 1.2rem;
+    color: #555;
+    margin-bottom: 15px;
+}
+
+
+
+
+.history-section {
+    margin-top: 30px;
+}
+
+.history-section h3 {
+    font-size: 1.8rem;
+    color: #343a40;
+    margin-bottom: 20px;
+}
+
+/* Grid layout for history categories */
+.history-category-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); /* Better column fitting */
+    gap: 20px; /* Space between items */
+    justify-content: center; /* Center the items */
+}
+
+
+
+.history-category {
+    padding: 20px;
+    background-color: #333;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    height: fit-content;
+}
+
+
+/* Align download button with category title */
+.history-category h4 {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-size: 1.5rem;
+    color: #e68a00; /* Adjust to match your theme */
+    margin-bottom: 10px;
+}
+
+.history-category h4 .title {
+    display: flex;
+    align-items: center;
+    gap: 5px; /* Adjust spacing between the icon and text */
+}
+
+/* Download button styling */
+.download-button {
+    background-color: #555; /* Match theme color */
+    color: white;
+    padding: 8px 12px;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    font-size: 14px;
+    display: flex;
+    align-items: center;
+    transition: background-color 0.3s ease-in-out;
+}
+
+.download-button:hover {
+    background-color: #444;
+}
+
+/* Dropdown container */
+.download-dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+/* Dropdown menu */
+.download-options {
+    display: none;
+    position: absolute;
+    right: 0;
+    top: 100%;
+    background-color: #fff;
+    min-width: 150px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+    border-radius: 5px;
+    overflow: hidden;
+}
+
+.download-dropdown:hover .download-options {
+    display: block;
+}
+
+/* Dropdown buttons */
+.download-options button {
+    width: 100%;
+    padding: 8px 12px;
+    text-align: left;
+    border: none;
+    background-color: white;
+    cursor: pointer;
+    font-size: 14px;
+}
+
+.download-options button:hover {
+    background-color: #f1f1f1;
+}
+
+
+
+/* Prevent history items from stretching */
+.history-item {
+    background-color: #ffffff;
+    padding: 5px;
+    margin-bottom: 10px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: auto; /* Allow width to adjust based on content */
+    height: auto; /* Let height adjust based on content */
+    max-width: 100%; /* Prevent overflow */
+    word-wrap: break-word; /* Ensure long words break properly */
+}
+
+.history-item p {
+    font-size: 1rem;
+    color: #555;
+    margin-bottom: 5px;
+}
+
+.history-item strong {
+    font-weight: bold;
+}
+
+/* Responsiveness for images and videos */
+.reddit-image, .youtube-video iframe {
+    width: 100%;
+    max-width: 100%;  /* Ensure image/video does not overflow */
+    height: auto;     /* Maintain aspect ratio */
+    border-radius: 8px;
+    margin-top: 10px;
+}
+
+/* Responsiveness: Stack categories on small screens */
+@media (max-width: 768px) {
+    .profile-page {
+        padding: 10px;
+    }
+
+    .profile-header h2 {
+        font-size: 2rem;
+    }
+
+    .profile-details p {
+        font-size: 1rem;
+    }
+
+    .history-section h3 {
+        font-size: 1.5rem;
+    }
+
+    .history-category-container {
+        grid-template-columns: 1fr; /* Stack categories vertically on smaller screens */
+    }
+
+    .history-category {
+        width: 100%;
+        margin: 10px 0;
+    }
+
+    .history-category h4 {
+        font-size: 1.3rem;
+    }
+
+    .history-item p {
+        font-size: 0.9rem;
+    }
+
+    .no-history {
+        font-size: 1rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .profile-page {
+        padding: 5px;
+    }
+
+    .profile-header h2 {
+        font-size: 1.5rem;
+    }
+
+    .profile-details p {
+        font-size: 0.9rem;
+    }
+
+    .history-section h3 {
+        font-size: 1.2rem;
+    }
+
+    .history-category h4 {
+        font-size: 1.1rem;
+    }
+
+    .history-item p {
+        font-size: 0.8rem;
+    }
+
+    .no-history {
+        font-size: 0.9rem;
+    }
+}

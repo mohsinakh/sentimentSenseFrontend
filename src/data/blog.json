@@ -1,0 +1,54 @@
+{
+    "blogs": [
+      {
+        "title": "What is Sentiment Analysis? A Definitive Guide",
+        "author": "Bytesview",
+        "description": "An elegantly written and easy-to-understand article covering the definition, inner workings, challenges, and applications of sentiment analysis.",
+        "link": "https://www.bytesview.com/blog/wp-content/uploads/2021/04/what-is-sentiment-analysis.mp4",
+        "image": "https://miro.medium.com/v2/resize:fit:1400/format:webp/0*NokZjLWRt17x0bzr"
+      },
+      {
+        "title": "What is sentiment analysis and how to do it by yourself",
+        "author": "Brand24",
+        "description": "Learn who uses sentiment analysis, how it’s done, the challenges faced, and how to perform it yourself.",
+        "link": "https://brand24.com/blog/sentiment-analysis/",
+        "image": "https://miro.medium.com/v2/resize:fit:1400/format:webp/0*DMXT3kxRdQXToE1E"
+      },
+      {
+        "title": "What is Sentiment Analysis? Examples, Best Practices, & More",
+        "author": "Callminer",
+        "description": "An in-depth guide covering examples, use cases, benefits, and challenges of sentiment analysis with tips and best practices.",
+        "link": "https://callminer.com/blog/sentiment-analysis-examples-best-practices",
+        "image": "https://miro.medium.com/v2/resize:fit:1400/format:webp/0*KxB2Pd-F0KFGyyLi"
+      },
+      {
+        "title": "Introduction to Sentiment Analysis",
+        "author": "Algorithmia",
+        "description": "Explores the definition, applications, challenges, and technical aspects of sentiment analysis, with additional reading material.",
+        "link": "https://www.datarobot.com/product/ai-platform/?redirect_source=algorithmia.com",
+        "image": "https://miro.medium.com/v2/resize:fit:1400/format:webp/0*b6FHDN_g6kVe72Bs"
+      },
+      {
+        "title": "Sentiment Analysis Guide",
+        "author": "Talkwalker",
+        "description": "A detailed explanation of sentiment analysis tools, methods, and real-life examples of how companies use them.",
+        "link": "https://www.talkwalker.com/blog/sentiment-analysis-guide",
+        "image": "https://miro.medium.com/v2/resize:fit:1400/format:webp/0*MZqSeXGZdTS4MGYt"
+      },
+      {
+        "title": "Hacking the product rating race with sentiment analysis",
+        "author": "Revuze",
+        "description": "Covers sentiment analysis applications in ratings and reviews, with industry-specific examples and challenges.",
+        "link": "https://www.revuze.it/blog/sentiment-analysis/#:~:text=Hacking%20The%20Product%20Rating%20Race%20With%20Sentiment%20Analysis%20In%202021,12%25%20more%20revenue%E2%80%A6",
+        "image": "https://miro.medium.com/v2/resize:fit:1400/format:webp/0*8zAOI1a4y3wTNVcY"
+      },
+      {
+        "title": "Towards Data Science — Sentiment Analysis",
+        "author": "Towards Data Science",
+        "description": "A technical article exploring the building blocks of sentiment analysis and a case study on Uber.",
+        "link": "https://towardsdatascience.com/tagged/sentiment-analysis",
+        "image": "https://miro.medium.com/v2/resize:fit:1400/format:webp/0*IzhlRdyPr6KrKHHB"
+      }
+    ]
+  }
+  

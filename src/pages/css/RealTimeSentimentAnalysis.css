@@ -1,0 +1,170 @@
+/* General Styles */
+.sentiment-page {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 40px 20px;
+  background-color: #f9f9f9;
+  color: #333;
+  min-height: 78vh;
+  box-sizing: border-box;
+}
+
+.sentiment-page h1 {
+  font-size: 2.5rem;
+  background: linear-gradient(45deg, #f5a623, #e68a00);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  color: transparent;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.sentiment-page p {
+  font-size: 1.2rem;
+  margin-bottom: 20px;
+  color: #555;
+  text-align: center;
+}
+
+/* Input Container */
+.input-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  max-width: 600px;
+  margin-bottom: 20px;
+}
+
+.sentiment-input {
+  width: 100%;
+  min-height: 120px;
+  padding: 10px;
+  border: 2px solid #e0e0e0;
+  border-radius: 8px;
+  font-size: 1rem;
+  resize: vertical;
+  box-sizing: border-box;
+}
+
+.analyze-button {
+  margin-top: 15px;
+  background: linear-gradient(45deg, #f5a623, #e68a00);
+  color: #fff;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  font-size: 1.1rem;
+  cursor: pointer;
+  transition: background-color 0.3s, transform 0.2s;
+}
+
+.analyze-button:hover {
+  background-color: #f5a623;
+  transform: scale(1.05);
+}
+
+.analyze-button:disabled {
+  background-color: #ccc;
+  cursor: not-allowed;
+}
+
+/* Sentiment Result */
+.sentiment-result {
+  margin-top: 20px;
+  padding: 15px 20px;
+  background-color: #e8f5e9;
+  border: 1px solid #c8e6c9;
+  border-radius: 5px;
+  font-size: 1.2rem;
+  color: #388e3c;
+  width: 100%;
+  max-width: 600px;
+  text-align: center;
+}
+
+.error {
+  color: #d32f2f;
+  margin-top: 10px;
+  font-size: 1rem;
+  text-align: center;
+}
+
+/* Responsive Design */
+@media screen and (max-width: 768px) {
+  .sentiment-page {
+    padding: 30px 15px;
+  }
+
+  .sentiment-page h1 {
+    font-size: 2rem;
+  }
+
+  .sentiment-page p {
+    font-size: 1.1rem;
+  }
+
+  .sentiment-input {
+    min-height: 100px;
+    font-size: 0.95rem;
+  }
+
+  .analyze-button {
+    font-size: 1rem;
+    padding: 8px 15px;
+  }
+
+  .sentiment-result {
+    font-size: 1rem;
+    padding: 10px 15px;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .sentiment-page {
+    padding: 20px 10px;
+  }
+
+  .sentiment-page h1 {
+    font-size: 1.8rem;
+  }
+
+  .sentiment-page p {
+    font-size: 1rem;
+  }
+
+  .sentiment-input {
+    font-size: 0.9rem;
+  }
+
+  .analyze-button {
+    font-size: 0.9rem;
+    padding: 8px 12px;
+  }
+
+  .sentiment-result {
+    font-size: 0.9rem;
+    padding: 10px 12px;
+  }
+}
+
+@media screen and (max-width: 320px) {
+  .sentiment-page h1 {
+    font-size: 1.6rem;
+  }
+
+  .sentiment-page p {
+    font-size: 0.9rem;
+  }
+
+  .analyze-button {
+    font-size: 0.85rem;
+    padding: 6px 10px;
+  }
+
+  .sentiment-result {
+    font-size: 0.85rem;
+  }
+}

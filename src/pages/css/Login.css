@@ -1,0 +1,206 @@
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f7f6; /* Matches home.css theme */
+    color: #333;
+    position: relative;
+    min-height: 100vh; 
+}
+
+/* Login Container */
+.login-container {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%); /* Offset to center the element */
+    width: 90%;
+    max-width: 400px;
+    background-color: #fff;
+    padding: 30px 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.login-container:hover {
+    transform: translate(-50%, -50%) translateY(-5px); /* Slight hover effect */
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+}
+
+/* Heading Styles */
+.login-container h2 {
+    font-size: 2rem;
+    color: #333;
+    margin-bottom: 20px;
+    background: linear-gradient(45deg, #f5a623, #e68a00);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+/* Form Styles */
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+label {
+    font-size: 1rem;
+    font-weight: bold;
+    color: #555;
+    text-align: left;
+}
+
+input {
+    width: 100%;
+    padding: 10px;
+    font-size: 1rem;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    transition: border-color 0.3s, box-shadow 0.3s;
+}
+
+input:focus {
+    border-color: #f5a623;
+    box-shadow: 0 0 5px rgba(245, 166, 35, 0.4);
+    outline: none;
+}
+
+
+
+/* Password Container */
+.password-container {
+    position: relative;
+  }
+  
+  /* Position the password toggle icon inside the input field */
+  .password-toggle-icon {
+    position: absolute;
+    right: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+    cursor: pointer;
+    z-index: 1; /* Ensure icon stays above input field */
+  }
+
+  
+  
+
+/* Error Message */
+.error-message {
+    font-size: 0.9rem;
+    color: red;
+    margin-bottom: 10px;
+}
+
+
+
+/* Buttons */
+.btn {
+    background: linear-gradient(45deg, #f5a623, #e68a00);
+    border: none;
+    color: #fff;
+    font-size: 1.1rem;
+    font-weight: bold;
+    padding: 12px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.3s, transform 0.2s ease-in-out;
+}
+
+.btn:hover {
+    background: linear-gradient(45deg, #e68a00, #f5a623);
+    transform: scale(1.05);
+}
+
+.btn:focus {
+    outline: none;
+}
+
+.google-btn-container{
+    margin:10px 0px;
+}
+
+.button-google {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    padding: 8px 16px;
+    border: 1px solid #dcdcdc;
+    border-radius: 24px;
+    background-color: white;
+    font-family: Arial, sans-serif;
+    font-size: 16px;
+    color: #000;
+    cursor: pointer;
+    transition: box-shadow 0.2s ease;
+  }
+  
+  .button-google img {
+    height: 20px;
+    margin-right: 8px;
+  }
+  
+  .button-google:hover {
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+  }
+  
+
+  .forgot-password-link {
+    color: #007bff;
+    cursor: pointer;
+    font-size: 14px;
+    margin-top: 5px;
+  }
+  
+  .forgot-password-link:hover {
+    text-decoration: underline;
+  }
+  
+
+
+/* Sign-Up Button */
+.signup-link {
+    font-size: 1rem;
+    color: #f5a623;
+    text-decoration: none;
+    cursor: pointer;
+    transition: color 0.3s;
+}
+
+.signup-link:hover {
+    color: #e68a00;
+}
+
+/* Responsive Design */
+@media (max-width: 480px) {
+    .login-container {
+        padding: 20px 15px;
+    }
+
+    h2 {
+        font-size: 1.8rem;
+    }
+
+    input {
+        font-size: 0.9rem;
+        padding: 8px;
+    }
+
+    .btn {
+        font-size: 1rem;
+        padding: 10px 15px;
+    }
+
+    .signup-link {
+        font-size: 0.9rem;
+    }
+}

@@ -1,0 +1,359 @@
+/* General Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f4f7f6;
+  color: #333;
+}
+
+/* Header Styles */
+header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 15px 30px;
+  background-color: #333;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+}
+
+.logo-img {
+  height: 30px; /* Ensure consistent size */
+  width: auto; /* Maintain aspect ratio */
+  margin: 0px 10px;
+  object-fit: contain; /* Prevent distortion */
+}
+
+.logo a {
+  display: flex;
+  align-items: center;
+  color: #e59417;
+  font-size: 2rem;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.desktop-nav{
+  width: 65%;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+
+.logo a {
+  color: #e59417;
+  font-size: 2rem;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.desktop-nav ul {
+  display: flex;
+  gap: 20px;
+  align-items: center;
+  list-style: none;
+}
+
+.desktop-nav ul li {
+  display: inline-block;
+}
+
+.desktop-nav ul li a {
+  color: #fff;
+  text-decoration: none;
+  font-size: 1.1rem;
+  transition: color 0.3s, transform 0.2s;
+}
+
+.desktop-nav ul li a:hover {
+  color: #f5a623;
+  transform: scale(1.1);
+}
+
+/* Logout Button Styles */
+nav .btn {
+  padding: 8px 16px;
+  border-radius: 25px;
+  border: none;
+  background-color: #f5a623;
+  color: #fff;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background-color 0.3s, transform 0.2s;
+}
+
+nav .btn:hover {
+  background-color: #e59417;
+  transform: scale(1.05);
+}
+
+nav .btn:focus {
+  outline: none;
+}
+
+/* Hamburger Icon Styles */
+.hamburger {
+  display: none;
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 0;
+  z-index: 10;
+}
+
+.hamburger .bar {
+  display: block;
+  width: 30px;
+  height: 4px;
+  background-color: #fff;
+  margin: 6px 0;
+  transition: transform 0.4s ease, opacity 0.4s ease;
+}
+
+.hamburger.open .bar:nth-child(1) {
+  transform: rotate(-45deg) translate(-5px, 6px);
+}
+
+.hamburger.open .bar:nth-child(2) {
+  opacity: 0;
+}
+
+.hamburger.open .bar:nth-child(3) {
+  transform: rotate(45deg) translate(-5px, -6px);
+}
+
+/* Side Navigation */
+.side-nav {
+  position: fixed;
+  top: 0;
+  left: -250px;
+  height: 100%;
+  width: 250px;
+  background-color: #333;
+  transition: left 0.3s ease;
+  z-index: 20;
+  padding-top: 60px;
+  box-shadow: 2px 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.side-nav.open {
+  left: 0;
+}
+
+.side-nav ul {
+  list-style: none;
+  padding: 0;
+}
+
+.side-nav ul li {
+  padding: 15px;
+  text-align: center;
+}
+
+.side-nav ul li a {
+  color: #fff;
+  text-decoration: none;
+  font-size: 1.2rem;
+  display: block;
+  padding: 10px;
+  transition: background 0.3s;
+}
+
+.side-nav ul li a:hover {
+  background-color: #f5a623;
+}
+
+/* Responsive Design */
+
+/* For Mobile Devices (max-width: 768px) */
+@media (max-width: 768px) {
+  .desktop-nav {
+    display: none; /* Hide desktop navigation */
+  }
+
+  .logo{
+    margin: 0px 0px ;
+  }
+  
+
+  .hamburger {
+    display: block; /* Show hamburger icon on mobile */
+  }
+
+  .logo a {
+    font-size: 1.5rem; /* Smaller logo on mobile */
+    font-weight: bold;
+    padding: 10px;
+  }
+
+  /* Improve spacing and readability of the mobile navigation */
+  .side-nav {
+    position: fixed;
+    top: 0;
+    left: -250px;
+    height: 100%;
+    width: 250px;
+    background-color: #333;
+    transition: left 0.3s ease;
+    z-index: 20;
+    padding-top: 60px;
+    box-shadow: 2px 0 10px rgba(0, 0, 0, 0.1);
+  }
+
+  .side-nav.open {
+    left: 0;
+  }
+
+  .side-nav ul {
+    padding: 0;
+  }
+
+  .side-nav ul li {
+    padding: 12px 15px;
+    text-align: center;
+    font-size: 1.1rem; /* Slightly larger font for better readability */
+  }
+
+  .side-nav ul li a {
+    display: block;
+    padding: 10px;
+    color: #fff;
+    font-size: 1.1rem;
+    text-decoration: none;
+    transition: background-color 0.3s;
+  }
+
+  .side-nav ul li a:hover {
+    background-color: #f5a623;
+  }
+
+  /* Add margin to the hamburger and logo to ensure better spacing */
+  header {
+    padding: 10px 10px;
+  }
+
+  /* Button Styles in Side Nav */
+  .side-nav .btn {
+    margin-top: 20px;
+    padding: 10px 20px;
+    font-size: 1rem;
+    border-radius: 30px;
+    background-color: #f5a623;
+    color: white;
+    text-align: center;
+    transition: all 0.3s ease;
+  }
+
+  .side-nav .btn:hover {
+    background-color: #e59417;
+    transform: scale(1.05);
+  }
+}
+
+/* For Tablets (min-width: 768px and max-width: 1024px) */
+@media (min-width: 768px) and (max-width: 1024px) {
+  .desktop-nav {
+    display: flex; /* Show desktop nav on tablets */
+  }
+
+  .side-nav {
+    display: none; /* Hide side navigation on tablets */
+  }
+
+  .hamburger {
+    display: none; /* Hide hamburger icon on tablets */
+  }
+
+  /* Logo Style for Tablet */
+  .logo a {
+    font-size: 1.6rem; /* Larger logo for tablets */
+  }
+
+  /* Navigation Styling for Tablet */
+  .desktop-nav ul {
+    gap: 15px; /* Increase gap for tablet screen */
+  }
+
+  .desktop-nav ul li a {
+    font-size: 0.9rem; /* Slightly larger font for better readability on tablets */
+  }
+
+  .desktop-nav ul li a:hover {
+    color: #f5a623;
+    transform: scale(1.05);
+  }
+}
+
+/* For Desktop (min-width: 1024px) */
+@media (min-width: 1024px) {
+  .logo a {
+    font-size: 2rem; /* Larger logo for desktop */
+  }
+
+  .desktop-nav {
+    display: flex;
+  }
+
+  .hamburger {
+    display: none; /* Hide hamburger icon on desktop */
+  }
+
+  .side-nav {
+    display: none; /* Hide side navigation on desktop */
+  }
+
+  .desktop-nav ul li a {
+    font-size: 1.0rem; /* Standard font size for desktop */
+    transition: color 0.3s, transform 0.2s;
+  }
+
+  .desktop-nav ul li a:hover {
+    color: #f5a623;
+    transform: scale(1.1);
+  }
+
+  /* Styling for buttons and navbar elements */
+  .nav-link, .btn {
+    font-size: 1rem; /* Consistent font size across different screen sizes */
+    border-radius: 25px;
+    border: none;
+  }
+
+  /* Logout button styles */
+  .btn {
+    background-color: #f5a623;
+    color: #fff;
+    font-size: 1rem;
+    padding: 8px 16px;
+    border-radius: 25px;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.2s;
+  }
+
+  .btn:hover {
+    background-color: #e59417;
+    transform: scale(1.05);
+  }
+
+  .btn:focus {
+    outline: none;
+  }
+}
+
+
+
+@media screen and (max-width : 560px){
+
+  .logo-img {
+    margin: 0px 5px;
+  }
+}

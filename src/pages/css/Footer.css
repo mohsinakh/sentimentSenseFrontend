@@ -1,0 +1,144 @@
+/* General Styles for Footer */
+:root {
+  --footer-bg-color: #333;
+  --footer-text-color: #fff;
+  --footer-link-color: #f5a623;
+  --footer-link-hover-color: #fff;
+}
+
+
+html, body {
+  height: 100%;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+}
+
+.main-content {
+  flex-grow: 1; /* Pushes footer to the bottom */
+}
+
+footer {
+  background-color: #333;
+  color: #fff;
+  padding: 5px;
+  text-align: center;
+  position: relative;
+  width: 100%;
+}
+
+footer p {
+  margin: 5px;
+  font-size: 0.9rem;
+}
+
+footer a {
+  color: #f5a623;
+  text-decoration: none;
+  transition: color 0.3s, transform 0.2s;
+}
+
+footer a:hover {
+  color: #fff;
+  transform: scale(1.1); /* Slight hover effect */
+}
+
+/* Footer container for layout */
+.footer-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap; /* Ensures wrapping on smaller screens */
+  padding: 20px;
+}
+
+/* Footer Links */
+.footer-links {
+  display: flex;
+  gap: 15px;
+  justify-content: center;
+}
+
+.footer-links a {
+  font-size: 1rem;
+  margin: 0 10px;
+}
+
+.footer-social {
+  display: flex;
+  gap: 15px;
+  justify-content: center;
+}
+
+.footer-social a {
+  font-size: 1.2rem;
+}
+
+/* Media Queries for Responsiveness */
+@media screen and (max-width: 1024px) {
+  .footer-container {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .footer-links {
+    margin-bottom: 15px;
+  }
+
+  .footer-links a {
+    font-size: 0.95rem;
+  }
+
+  .footer-social a {
+    font-size: 1.1rem;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  
+
+  .footer-container {
+    padding: 15px;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .footer-links {
+    gap: 10px;
+  }
+
+  .footer-social {
+    margin-top: 10px;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  footer {
+    padding: 10px;
+  }
+
+  .footer-links {
+    gap: 5px;
+  }
+
+  .footer-links a {
+    font-size: 0.85rem;
+  }
+
+  .footer-social a {
+    font-size: 1rem;
+  }
+}
+
+/* For extra-small devices (320px and below) */
+@media screen and (max-width: 320px) {
+  footer p {
+    font-size: 0.8rem;
+  }
+
+  .footer-links a,
+  .footer-social a {
+    font-size: 0.75rem;
+  }
+}

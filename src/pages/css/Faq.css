@@ -1,0 +1,111 @@
+/* General Styles for FAQ Page */
+.faq-page-container {
+    background-color: #f9f9f9;
+    padding: 40px;
+    font-family: Arial, sans-serif;
+}
+
+/* FAQ Section Header */
+.faq-section h2 {
+    text-align: center;
+    font-size: 2rem;
+    margin-bottom: 30px;
+    color: #333;
+}
+
+/* FAQ List Styling */
+.faq-list {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    justify-content: flex-start;  /* Align questions to the right */
+}
+
+/* FAQ Item Styling */
+.faq-item {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s, box-shadow 0.3s;
+    max-width: 800px;
+    width: 100%;  /* Make sure the container width is fixed */
+    margin: 0 auto; /* Keep the item centered horizontally */
+}
+
+/* FAQ Question Styling */
+.faq-question {
+    display: flex;
+    justify-content: flex-start;  /* Right-align the question */
+    align-items: center;
+    cursor: pointer;
+    font-size: 1.2rem;
+    color: #333;
+    font-weight: bold;
+    padding: 10px 0;
+    text-align: left;  /* Ensure text inside question is aligned to the right */
+}
+
+/* FAQ Answer Styling */
+.faq-answer {
+    padding-top: 10px;
+    font-size: 1rem;
+    color: #555;
+    line-height: 1.6;
+    margin-top: 10px;
+    text-align: left;  /* Keep answer text left-aligned */
+}
+
+/* Toggle Icon Styling */
+.toggle-icon {
+    font-size: 1.5rem;
+    color: #f5a623;
+    margin-left: auto;
+}
+
+/* Responsive Adjustments */
+@media screen and (max-width: 768px) {
+    .faq-section h2 {
+        font-size: 1.6rem;
+    }
+
+    .faq-question h3 {
+        font-size: 1rem;
+    }
+
+    .faq-answer p {
+        font-size: 0.9rem;
+    }
+
+    .toggle-icon {
+        font-size: 1.3rem;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .faq-item {
+        padding: 15px;
+    }
+
+    .faq-question h3 {
+        font-size: 0.9rem;
+    }
+
+    .faq-answer p {
+        font-size: 0.8rem;
+    }
+
+    .toggle-icon {
+        font-size: 1.2rem;
+    }
+}
+
+/* Smooth Transitions */
+.faq-item {
+    transition: transform 0.5s, box-shadow 0.5s ease-in-out;
+}
+
+.faq-item:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2);
+}

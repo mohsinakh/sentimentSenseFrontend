@@ -1,0 +1,146 @@
+[
+  {
+    "question": "What is Sentiment Sense?",
+    "answer": "Sentiment Sense is a deep learning-based sentiment analysis tool that helps you understand audience feedback on platforms like YouTube and Reddit."
+  },
+  {
+    "question": "How does the analysis work?",
+    "answer": "We use advanced natural language processing (NLP) techniques to analyze comments, extracting insights on the sentiment of your audience."
+  },
+  {
+    "question": "Can I analyze data in real-time?",
+    "answer": "Yes, our platform allows real-time sentiment analysis, giving you instant insights as users interact with your content."
+  },
+  {
+    "question": "Which platforms do you support?",
+    "answer": "Currently, we support YouTube and Reddit for comment analysis. More platforms are being added soon."
+  },
+  {
+    "question": "Is my data safe?",
+    "answer": "Yes, we prioritize privacy and security. Your data is handled securely, and we don't share it with third parties."
+  },
+  {
+    "question": "How accurate is Sentiment Sense?",
+    "answer": "Sentiment Sense is powered by cutting-edge deep learning algorithms, which ensure high accuracy in sentiment detection, even in complex language patterns."
+  },
+  {
+    "question": "Can I use Sentiment Sense for other types of content?",
+    "answer": "While we currently focus on comments from YouTube and Reddit, we are actively working on expanding our tool to analyze other types of content, including blog posts, reviews, and social media comments."
+  },
+  {
+    "question": "What is sentiment analysis?",
+    "answer": "Sentiment analysis is the process of determining the emotional tone behind a series of words, used to gain an understanding of the attitudes, opinions, and emotions expressed in the text."
+  },
+  {
+    "question": "Do I need to sign up to use Sentiment Sense?",
+    "answer": "Yes, to access the full range of features, you need to sign up for an account. You can start with a free trial to explore the platform before committing."
+  },
+  {
+    "question": "Can I export the analysis results?",
+    "answer": "Yes, you can export your sentiment analysis results in various formats, including CSV and JSON, for further analysis or reporting."
+  },
+  {
+    "question": "Does Sentiment Sense support multiple languages?",
+    "answer": "Currently, Sentiment Sense supports English, but we're expanding to include more languages in the near future."
+  },
+  {
+    "question": "How long does it take to analyze data?",
+    "answer": "Sentiment Sense processes data quickly, with most analyses completing in just a few seconds, even for large sets of comments."
+  },
+  {
+    "question": "Can I analyze historical data?",
+    "answer": "Yes, you can analyze historical comments and posts from YouTube and Reddit, allowing you to track sentiment trends over time."
+  },
+  {
+    "question": "What do the sentiment scores mean?",
+    "answer": "Sentiment scores are based on a scale from -1 to 1, where -1 indicates negative sentiment, 1 indicates positive sentiment, and 0 indicates neutral sentiment."
+  },
+  {
+    "question": "Can I filter comments by sentiment?",
+    "answer": "Yes, Sentiment Sense allows you to filter and view comments based on their sentiment—positive, negative, or neutral."
+  },
+  {
+    "question": "Is there a mobile app for Sentiment Sense?",
+    "answer": "Currently, we only offer a web-based platform. However, we are considering the development of a mobile app for future releases."
+  },
+  {
+    "question": "How do I integrate Sentiment Sense with my existing tools?",
+    "answer": "We provide easy-to-use APIs that allow you to integrate Sentiment Sense with other tools and platforms you use for data analysis or content management."
+  },
+  {
+    "question": "What types of insights can I gain from sentiment analysis?",
+    "answer": "You can gain insights into overall audience sentiment, identify positive and negative comments, understand audience engagement, and track sentiment over time."
+  },
+  {
+    "question": "How can I improve the accuracy of sentiment analysis?",
+    "answer": "The more context you provide, the more accurate the sentiment analysis will be. Clear and direct language in comments helps the model provide more accurate results."
+  },
+  {
+    "question": "Can Sentiment Sense detect sarcasm or irony?",
+    "answer": "While our tool is advanced, detecting sarcasm or irony can still be a challenge. However, we continuously improve our algorithms to better handle these complexities."
+  },
+  {
+    "question": "Is there a limit to how many comments I can analyze?",
+    "answer": "No, there is no strict limit to the number of comments you can analyze. However, very large datasets may require additional processing time."
+  },
+  {
+    "question": "How can I contact support?",
+    "answer": "You can reach out to our support team through the 'Contact Us' section on our website, or by emailing sensesentiment@gmail.com."
+  },
+  {
+    "question": "Can I cancel my subscription anytime?",
+    "answer": "Yes, you can cancel your subscription at any time. We offer a flexible cancellation policy, and you’ll continue to have access to the service until the end of your billing cycle."
+  },
+  {
+    "question": "Do I need programming skills to use Sentiment Sense?",
+    "answer": "No, Sentiment Sense is designed to be user-friendly and accessible to everyone, with no programming skills required."
+  },
+  {
+    "question": "What kind of sentiment analysis reports can I generate?",
+    "answer": "You can generate reports that show sentiment trends, sentiment distribution by topic, sentiment comparison between different platforms, and more."
+  },
+  {
+    "question": "Can I customize the sentiment analysis model?",
+    "answer": "We currently offer a standard sentiment analysis model. However, we are planning to provide options for model customization in future releases."
+  },
+  {
+    "question": "What makes Sentiment Sense different from other sentiment analysis tools?",
+    "answer": "Sentiment Sense is unique because of its real-time capabilities, multi-platform support, and its focus on deep learning algorithms that improve accuracy over time."
+  },
+  {
+    "question": "How often is the sentiment analysis model updated?",
+    "answer": "Our sentiment analysis model is updated regularly to improve accuracy and handle new language patterns and slang used on platforms like YouTube and Reddit."
+  },
+  {
+    "question": "Can I analyze private posts or comments?",
+    "answer": "No, Sentiment Sense only analyzes public data that is available on platforms like YouTube and Reddit. Private or restricted data cannot be accessed."
+  },
+  {
+    "question": "What is the difference between a positive, negative, and neutral sentiment?",
+    "answer": "Positive sentiment indicates a favorable or approving tone, negative sentiment indicates dissatisfaction or criticism, and neutral sentiment indicates a lack of strong emotional tone."
+  },
+  {
+    "question": "Can Sentiment Sense identify specific user sentiments?",
+    "answer": "Currently, Sentiment Sense analyzes the overall sentiment of comments, but it does not identify the sentiment of specific users."
+  },
+  {
+    "question": "Can I track sentiment over time?",
+    "answer": "Yes, Sentiment Sense allows you to track sentiment trends over time, helping you understand how audience sentiment evolves around specific topics or content."
+  },
+  {
+    "question": "Can I share my sentiment analysis reports with others?",
+    "answer": "Yes, you can download them to share with others."
+  },
+  {
+    "question": "What happens if my analysis results are not accurate?",
+    "answer": "If you notice any inconsistencies in the results, feel free to contact our support team. We continuously refine our algorithms and appreciate user feedback."
+  },
+  {
+    "question": "Does Sentiment Sense provide any predictive insights?",
+    "answer": "Yes, our platform includes predictive analytics that can help you forecast future sentiment trends based on historical data."
+  },
+  {
+    "question": "Can I compare sentiment across multiple platforms?",
+    "answer": "Yes, Sentiment Sense allows you to compare sentiment across multiple platforms, like YouTube and Reddit, to understand how your content resonates with different audiences."
+  }
+]
