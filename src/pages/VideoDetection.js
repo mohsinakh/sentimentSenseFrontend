@@ -1,11 +1,13 @@
-import React, { useState } from "react";
+import React, { useState ,useContext } from "react";
 import axios from "axios";
+import { AuthContext } from '../context/AuthContext';
 
 const VideoDetection = () => {
   const [selectedFile, setSelectedFile] = useState(null);
   const [videoUrl, setVideoUrl] = useState(null);
   const [loading, setLoading] = useState(false);
   const [error, setError] = useState("");
+    const { host } = useContext(AuthContext);
 
   // Handle file selection
   const handleFileChange = (event) => {
@@ -40,7 +42,7 @@ const VideoDetection = () => {
 
       // Send to backend and get processed video file
       const response = await axios.post(
-        "http://localhost:8000/emotion/detect-from-video/",
+        `${host}/emotion/detect-from-video/`,
         { base64_video: base64Video },
         { responseType: "blob" } // Expect binary file
       );
