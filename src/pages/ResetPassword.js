@@ -1,10 +1,11 @@
-import React, { useState } from 'react';
+import React, { useState , useContext } from 'react';
 import { useNavigate, useSearchParams } from 'react-router-dom';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faEye, faEyeSlash } from '@fortawesome/free-solid-svg-icons';
 import Loading from './Loading'; // Loading spinner component
 import { useToast } from '../context/ToastContext'; // Toast notification context
 import "./css/Login.css";
+import { AuthContext } from "../context/AuthContext";
 
 const ResetPassword = () => {
   const [newPassword, setNewPassword] = useState('');
@@ -16,6 +17,7 @@ const ResetPassword = () => {
   const { showToast } = useToast(); // Toast notification
   const [searchParams] = useSearchParams();
   const navigate = useNavigate();
+  const {host} = useContext(AuthContext)
 
   const token = searchParams.get('token'); // Get reset token from URL
 
@@ -32,7 +34,7 @@ const ResetPassword = () => {
     }
 
     try {
-      const response = await fetch('http://localhost:8000/auth/reset-password', {
+      const response = await fetch(`${host}/auth/reset-password`, {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify({ token, new_password: newPassword }),
