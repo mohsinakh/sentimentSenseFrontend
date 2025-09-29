@@ -86,7 +86,7 @@ const AboutUs = () => {
             <h3>Mohit Jaiswal</h3>
             <p>UI/UX Designer</p>
             <a
-              href="https://www.linkedin.com/in/mohit"
+              href="https://www.linkedin.com/in/mohit-jaiswal-o7/"
               target="_blank"
               rel="noopener noreferrer"
               className="linkedin-link"
@@ -100,7 +100,7 @@ const AboutUs = () => {
             <h3>Abdul Rafey Ansari</h3>
             <p>Data Scientist</p>
             <a
-              href="https://www.linkedin.com/in/abdul"
+              href="https://www.linkedin.com/in/abdul-rafey-ansari-2940a024b/"
               target="_blank"
               rel="noopener noreferrer"
               className="linkedin-link"
