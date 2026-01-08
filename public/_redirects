@@ -1,1 +1,3 @@
 /*    /index.html   200
+# Force HTTPS
+http://sentiment-sense.netlify.app/* https://sentiment-sense.netlify.app/:splat 301!
